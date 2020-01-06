@@ -49,7 +49,117 @@ console.log(firstName + ' ' + lastName);
 */
 
 /* 
-**** Basic Operators ****  */
+**** Basic Operators ****  
 //Determine John's age by subtracting his age from the current year.
 
-var yearJohn = 2020 - 32;
+var now, yearJohn, yearMark;
+now = 2020;
+ageJohn = 32;
+ageMark = 33;
+yearJohn = now - ageJohn;
+yearMark = now - ageMark;
+console.log(yearJohn);
+
+//Math Operators
+console.log(now + 2);
+console.log(now * 2);
+console.log(now / 10);
+
+// Logical operator
+var johnOlder = ageJohn < ageMark;
+console.log(johnOlder);
+
+// Typeof Operator
+console.log(typeof johnOlder);
+console.log(typeof ageJohn);
+console.log(typeof 'Mark is older than John');
+var x;
+console.log(typeof x);
+*/
+
+/*
+**** Operators Precidence ****
+var now = 2020 ;
+var yearJohn = 1979;
+var fullAge = 18;
+
+//Multiple Operators
+var isFullAge = now - yearJohn >= fullAge;
+console.log(isFullAge);
+
+//The average age of John and his friend
+var ageJohn = now - yearJohn;
+var ageMark = 35;
+//calulate the sum and divide by 2
+var average = (ageJohn + ageMark) / 2;
+console.log(average);
+
+//Multiple assignments (works from right-to-left)
+var x, y;
+x = (3 + 5) * 4 -6;// 8 * 4 - 6 // 32 -6 // =26
+x = y = (3 + 5) * 4 - 6;// 8 * 4 - 6 // 32 -6 // =26
+console.log(x);
+console.log(x,y);
+
+//More Operators
+x *= 2; // is the same as x = x*2;
+console.log(x);
+x += 10; // same as x = x + 10
+console.log(x);
+
+x++; // same as x = x + 1; x+= 1;
+x--;
+x++;
+console.log(x);
+  */
+
+/*
+**** Code  Challenge ****  
+
+//store mass and height in variables
+var marksMass, marksHeight, johnsMass, johnsHeight;
+marksMass = 81.6466;
+marksHeight = 1.524;
+johnsMass = 90.7185;
+johnsHeight = 1.8288;
+
+johnsBMI = johnsMass / (johnsHeight *= 2);
+console.log('John\'s BMI is ' + johnsBMI);
+marksBMI = marksMass / (marksHeight *= 2);
+console.log('Mark\'s BMI is ' + marksBMI);
+
+var highestBMI = marksBMI < johnsBMI;
+console.log('Is Mark\'s BMI higher than John\'s? ' + highestBMI);
+*/
+
+/* 
+**** If / else ****
+*/
+
+var firstName = 'John';
+var civilStatus = 'single';
+
+if (civilStatus === 'married'){
+  console.log(firstName + ' is married');
+} else{
+  console.log(firstName + ' will marry soon');
+}
+
+//Solve the code challenge above with if/else statement by logging to the console who has the highest BMI.
+
+var marksMass, marksHeight, johnsMass, johnsHeight;
+marksMass = 81.6466;
+marksHeight = 1.524;
+johnsMass = 190.7185;
+johnsHeight = 1.8288;
+
+johnsBMI = johnsMass / (johnsHeight *= 2);
+console.log('John\'s BMI is ' + johnsBMI);
+marksBMI = marksMass / (marksHeight *= 2);
+console.log('Mark\'s BMI is ' + marksBMI);
+
+if(marksBMI > johnsBMI){
+  console.log('Mark\'s BMI is higher than John\'s'); 
+} else{
+  console.log('John has the higher BMI.');
+}
