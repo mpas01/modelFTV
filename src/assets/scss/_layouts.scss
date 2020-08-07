@@ -1,0 +1,17 @@
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+.box{
+  background: lightblue;
+  width: 200px;
+  height: 200px;
+  padding: 40px;
+  border: 40px solid #000;
+  margin: 0 auto;
+}
+.margin-all{
+  margin: 20px;
+}

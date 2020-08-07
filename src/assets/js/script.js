@@ -134,7 +134,7 @@ console.log('Is Mark\'s BMI higher than John\'s? ' + highestBMI);
 
 /* 
 **** If / else ****
-*/
+
 
 var firstName = 'John';
 var civilStatus = 'single';
@@ -163,3 +163,86 @@ if(marksBMI > johnsBMI){
 } else{
   console.log('John has the higher BMI.');
 }
+*/
+
+/**** Boolean Statements ***
+var firstName = 'John';
+var age = 16;
+
+if (age < 13){
+  console.log(firstName + ' is a boy.');
+}else if(age >=13 && age < 20){
+  console.log(firstName + ' is a teenager.')
+}
+else{
+  console.log(firstName + ' is a man.')
+}
+*/
+
+const firstName = 'William';
+const lastName = 'Johnson';
+const person = {
+  name: 'Bob',
+  age: '30'
+}
+const keywords = 'marketing,web design,animation'
+const str = 'This is interesting isn\'t it?'
+
+//const value has to remain the same, but can mutate
+
+
+
+let val;
+//Concatenation
+
+val = firstName + ' ' + lastName;
+
+
+//Get the last character of a string
+val = firstName.charAt(firstName.length -1);
+
+//Get the 3rd character, should be 'n'
+val = lastName.charAt('3');
+
+//Get keywords and add spaces at commas using split()
+
+val = keywords.split(',');
+
+//Changing values in the object 'person'
+val = person.name;
+
+val = person.name = 'Gale';
+
+// Includes boolean. Results should equal false, the string 'Hello' is not in str
+val = str.includes('Hello');
+
+console.log(val);
+
+// Create an object and display with HTML using template strings
+const pet = {
+  Name: 'Cyrus',
+  Animal: 'Dog',
+  Breed: 'Bullterrier',
+  Personality:'fun',
+  Greeting: function hello(){
+     
+      return 'chirp chirp';
+    }
+    
+  
+}
+
+let html;
+
+// html = `
+//   <ul>
+//    <li>Animal: ${pet.Animal}</li>
+//    <li>Animal: ${pet.Animal = 'Cat'}</li>
+//    <li>Animal: ${pet.Name}</li>
+//    <li>Animal: ${pet.Name = 'Boris'}</li> 
+//    <!--Call a function-->
+//    <li>Say Hello: ${pet.Greeting()}</li>  
+//    <li>Say Hello: ${pet.Greeting()}</li>  
+//   </ul>
+// `;
+// document.body.innerHTML = html;
