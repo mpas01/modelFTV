@@ -6,6 +6,7 @@ import 'what-input';
 // it would execute earlier than we have assigned the global variable.
 // This is why we have to use CommonJS require() here since it doesn't
 // have the hoisting behavior.
+
 window.jQuery = $;
 require('foundation-sites');
 
@@ -13,5 +14,5 @@ require('foundation-sites');
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-
+// Foundation.addToJquery($);
 $(document).foundation();

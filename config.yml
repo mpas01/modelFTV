@@ -28,7 +28,16 @@ PATHS:
   sass:
     - "node_modules/foundation-sites/scss"
     - "node_modules/motion-ui/src"
-  # Paths to JavaScript entry points for webpack to bundle modules
+  
+  # Paths to Javascript entry points for Foundation
+  entries:
+    - "node_modules/what-input/dist/what-input.min.js"
+    - "node_modules/foundation-sites/dist/js/foundation.min.js"
+  
+  modernjavascript:
+    - "src/assets/js/script.js"
+    # Paths to JavaScript entry points for webpack to bundle modules
+  
   entries:
     - "src/assets/js/app.js"
-    - "src/assets/js/script.js"
+    

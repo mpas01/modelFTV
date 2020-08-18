@@ -124,7 +124,7 @@ let webpackConfig = {
 
 // Combine JavaScript into one file
 // In production, the file is minified
-function javascript() {
+function javascript(done) {
   return gulp.src(PATHS.entries)
     .pipe(named())
     .pipe($.sourcemaps.init())
@@ -134,6 +134,15 @@ function javascript() {
     ))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+  gulp.src(PATHS.modernjavascript)
+    .pipe($.sourcemaps.init())
+    .pipe($.concat('modernjs.js'))
+    .pipe($.if(PRODUCTION, $.uglify()
+      .on('error', e => { console.log(e); })
+    ))
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+  done();
 }
 
 // Copy images to the "dist" folder
