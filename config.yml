@@ -34,10 +34,12 @@ PATHS:
     - "node_modules/what-input/dist/what-input.min.js"
     - "node_modules/foundation-sites/dist/js/foundation.min.js"
   
-  modernjavascript:
-    - "src/assets/js/script.js"
+  # modernjavascript:
+   # - "src/assets/js/script.js"
     # Paths to JavaScript entry points for webpack to bundle modules
   
-  entries:
+  javascript:
+    - "src/assets/js/script.js"
     - "src/assets/js/app.js"
+    - "src/assets/js/appInit.js"
     

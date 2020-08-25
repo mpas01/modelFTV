@@ -232,28 +232,19 @@ const pet = {
   
 }
 
-// let html;
+let html;
 
-// html = `
-//   <ul>
-//    <li>Animal: ${pet.Animal}</li>
-//    <li>Animal: ${pet.Animal = 'Cat'}</li>
-//    <li>Animal: ${pet.Name}</li>
-//    <li>Animal: ${pet.Name = 'Boris'}</li> 
-//    <!--Call a function-->
-//    <li>Say Hello: ${pet.Greeting()}</li>  
-//    <li>Say Hello: ${pet.Greeting()}</li>  
-//   </ul>
-// `;
-// document.body.innerHTML = html;
+html = `
+  <ul>
+   <li>Animal: ${pet.Animal}</li>
+   <li>Animal: ${pet.Animal = 'Cat'}</li>
+   <li>Animal: ${pet.Name}</li>
+   <li>Animal: ${pet.Name = 'Boris'}</li> 
+   <!--Call a function-->
+   <li>Say Hello: ${pet.Greeting()}</li>  
+   <li>Say Hello: ${pet.Greeting()}</li>  
+  </ul>
+`;
+document.body.innerHTML = html;
 
 
-const today = new Date();
-// val = today;
-
-// Convert date to string
-// val = today.toString();
-
-// console.log(val);
-// Tells what "Date()" is, in this case an object
-console.log(typeof val); 
