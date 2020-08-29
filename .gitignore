@@ -3,6 +3,14 @@ node_modules
 npm-debug.log
 bower_components
 dist
+*log
 *.swp
-.cache
-.idea
+*.cache
+*.idea
+package-lock.json
+.yarn/**/*
+.yarnrc
+src/assets/js/vendor/
+src/assets/js/vendor/modernjs.js
+!src/assets/js/vendor/foundation-what-input.min.js
+!src/assets/js/vendor/jquery-3.5.1.min.js
