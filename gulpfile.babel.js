@@ -138,7 +138,7 @@ function javascript(done) {
   //    .pipe(gulp.dest(PATHS.dist + '/js/vendor/'));
   gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
-    .pipe($.concat('app.js'))
+    .pipe($.concat('bundle.js'))
     .pipe($.if(PRODUCTION, $.uglify()
       .on('error', e => { console.log(e); })
     ))

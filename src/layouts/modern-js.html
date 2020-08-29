@@ -18,11 +18,13 @@
     <script src="/js/vendor/jquery-3.5.1.min.js"></script>
   {{/if}}
 
-  {{#if usefoudationjs}}
+  {{#if usefoundationjs}}
   <script src="/js/vendor/foundation-what-input.min.js"></script>
-  <script>
+  
+  <!-- // Loading foundation's JS here will call the js before your custom JS. In an actual page, for now, change this to 'false' to avoid any reference to this code block.
+    <script>
     $(document).foundation();
-  </script>
+  </script> -->
   {{/if}}
 
   {{#if (isString javascript)}}

@@ -40,6 +40,7 @@ PATHS:
   
   javascript:
     - "src/assets/js/script.js"
-    - "src/assets/js/app.js"
-    - "src/assets/js/appInit.js"
+    # Uncomment app.js if you would like to include foundation's JS. The current order will load script.js befor foundation's JS. This will compile foundation's JS into 'dist' /bundle.js. 
+    # "src/assets/js/app.js"
+    
     

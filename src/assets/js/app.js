@@ -15,4 +15,6 @@
 //import './lib/foundation-explicit-pieces';
 
 // Foundation.addToJquery($);
+
+// call foundation when app is uncommented in config.yml
 $(document).foundation();
