@@ -28,7 +28,19 @@ PATHS:
   sass:
     - "node_modules/foundation-sites/scss"
     - "node_modules/motion-ui/src"
-  # Paths to JavaScript entry points for webpack to bundle modules
+  
+  # Paths to Javascript entry points for Foundation
   entries:
-    - "src/assets/js/app.js"
+    - "node_modules/what-input/dist/what-input.min.js"
+    - "node_modules/foundation-sites/dist/js/foundation.min.js"
+  
+  # modernjavascript:
+   # - "src/assets/js/script.js"
+    # Paths to JavaScript entry points for webpack to bundle modules
+  
+  javascript:
     - "src/assets/js/script.js"
+    # Uncomment app.js if you would like to include foundation's JS. The current order will load script.js befor foundation's JS. This will compile foundation's JS into 'dist' /bundle.js. 
+    # "src/assets/js/app.js"
+    
+    
